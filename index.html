@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAC Servicios | Impermeabilizantes y Pintura</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -65,7 +66,6 @@
       display:block;
       margin:0 auto 24px;
       filter:brightness(0) invert(1);
-      animation:fadeUp 0.7s ease both;
     }
 
     .hero-badge {
@@ -76,24 +76,21 @@
       font-size:0.75rem; letter-spacing:3px; text-transform:uppercase;
       padding:7px 22px; border-radius:50px;
       margin-bottom:28px;
-      animation:fadeUp 0.7s ease 0.1s both;
     }
 
     .hero h1 {
       font-family:'Playfair Display',serif;
       font-size:clamp(2.2rem,5vw,3.6rem);
       color:var(--white); line-height:1.2; margin-bottom:22px;
-      animation:fadeUp 0.7s ease 0.2s both;
     }
     .hero h1 span { color:var(--yellow); }
 
     .hero p {
       font-size:1.05rem; color:rgba(255,255,255,0.72);
       line-height:1.8; margin-bottom:40px;
-      animation:fadeUp 0.7s ease 0.32s both;
     }
 
-    .hero-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; animation:fadeUp 0.7s ease 0.44s both; }
+    .hero-btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
     .btn-primary  { background:var(--yellow); color:var(--black); font-weight:700; padding:14px 34px; border-radius:6px; text-decoration:none; font-size:0.95rem; transition:all 0.22s; display:inline-block; }
     .btn-primary:hover { background:var(--yellow2); transform:translateY(-2px); }
     .btn-secondary { background:transparent; color:var(--white); border:1.5px solid rgba(255,255,255,0.35); font-weight:500; padding:14px 34px; border-radius:6px; text-decoration:none; font-size:0.95rem; transition:all 0.22s; display:inline-block; }
@@ -268,7 +265,6 @@
     }
 
     /* ══ ANIMATIONS ══ */
-    @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
     .reveal { opacity:0; transform:translateY(30px); transition:opacity 0.6s ease, transform 0.6s ease; }
     .reveal.visible { opacity:1; transform:none; }
 
@@ -371,7 +367,7 @@
 <!-- ══ HEADER ══ -->
 <header>
   <div class="logo-area">
-    <img src="CAC (1).webp" alt="Logo CAC">
+    <img src="CAC (1).webp" alt="Logo CAC" width="84" height="60" fetchpriority="high" decoding="async">
     <div><div class="logo-tagline">Pintura e Impermeabilizantes</div></div>
   </div>
   <nav>
@@ -477,104 +473,104 @@
   </div>
 
   <div class="galeria-grid" id="galeriaGrid">
-    <div class="img-wrap"><img src="imagen7.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen8.webp"   alt="Proyecto 2"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen9.webp"   alt="Proyecto 3"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen10.webp"  alt="Proyecto 4"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen11.webp"  alt="Proyecto 5"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen12.webp"  alt="Proyecto 6"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen13.webp" alt="Proyecto 7"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen14.webp" alt="Proyecto 8"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen15.webp" alt="Proyecto 9"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen16.webp" alt="Proyecto 10" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen17.webp" alt="Proyecto 11" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen18.webp"  alt="Proyecto 12" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen19.webp"  alt="Proyecto 13" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen23.webp" alt="Proyecto 17" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen25.webp" alt="Proyecto 18" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen26.webp" alt="Proyecto 19" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="imagen27.webp" alt="Proyecto 20" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="IMAGEN.1.webp" alt="Proyecto 20" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="IMAGEN.2.webp" alt="Proyecto 20" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="IMAGEN.3.webp" alt="Proyecto 20" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="IMAGEN.4.webp" alt="Proyecto 20" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="IMAGEN.5.webp" alt="Proyecto 20" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (1).webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (2).webp"   alt="Proyecto 2"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (3).webp"   alt="Proyecto 3"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (4).webp"  alt="Proyecto 4"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (5).webp"  alt="Proyecto 5"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (6).webp"  alt="Proyecto 6"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (7).webp" alt="Proyecto 7"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (8).webp" alt="Proyecto 8"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (9).webp" alt="Proyecto 9"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (10).webp" alt="Proyecto 10" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (11).webp" alt="Proyecto 11" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (12).webp"  alt="Proyecto 12" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (13).webp"  alt="Proyecto 13" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (15).webp" alt="Proyecto 17" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (16).webp" alt="Proyecto 18" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (17).webp" alt="Proyecto 19" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (18).webp"  alt="Proyecto 12" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (19).webp"  alt="Proyecto 13" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (20).webp" alt="Proyecto 16" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (21).webp" alt="Proyecto 17" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="Imagen28 (22).webp" alt="Proyecto 18" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo1.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo2.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo3.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo4.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo5.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo6.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo7.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo8.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo9.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo10.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo11.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo12.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo13.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo14.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo15.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo16.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo17.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo18.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo19.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo20.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo21.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo22.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo23.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo24.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo25.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="nuevo26.webp"   alt="Proyecto 1"  loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (1).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (2).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (3).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (4).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (5).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (6).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (7).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (8).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (9).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (10).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (11).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (12).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (13).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n1 (14).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n2 (1).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n2 (2).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="n2 (3).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (1).webp" alt="Proyecto 1" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (2).webp" alt="Proyecto 2" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (3).webp" alt="Proyecto 3" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (4).webp" alt="Proyecto 4" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (5).webp" alt="Proyecto 5" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (6).webp" alt="Proyecto 6" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (7).webp" alt="Proyecto 7" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (8).webp" alt="Proyecto 8" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (9).webp" alt="Proyecto 9" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (10).webp" alt="Proyecto 10" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (11).webp" alt="Proyecto 11" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
-    <div class="img-wrap"><img src="211026 (12).webp" alt="Proyecto 12" loading="lazy"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen7-thumb.webp" data-full="imagen7.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen8-thumb.webp" data-full="imagen8.webp" width="480" height="480" decoding="async"   alt="Proyecto 2"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen9-thumb.webp" data-full="imagen9.webp" width="480" height="480" decoding="async"   alt="Proyecto 3"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen10-thumb.webp" data-full="imagen10.webp" width="480" height="480" decoding="async"  alt="Proyecto 4"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen11-thumb.webp" data-full="imagen11.webp" width="480" height="480" decoding="async"  alt="Proyecto 5"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen12-thumb.webp" data-full="imagen12.webp" width="480" height="480" decoding="async"  alt="Proyecto 6"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen13-thumb.webp" data-full="imagen13.webp" width="480" height="480" decoding="async" alt="Proyecto 7"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen14-thumb.webp" data-full="imagen14.webp" width="480" height="480" decoding="async" alt="Proyecto 8"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen15-thumb.webp" data-full="imagen15.webp" width="480" height="480" decoding="async" alt="Proyecto 9"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen16-thumb.webp" data-full="imagen16.webp" width="480" height="480" decoding="async" alt="Proyecto 10" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen17-thumb.webp" data-full="imagen17.webp" width="480" height="480" decoding="async" alt="Proyecto 11" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen18-thumb.webp" data-full="imagen18.webp" width="480" height="480" decoding="async"  alt="Proyecto 12" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen19-thumb.webp" data-full="imagen19.webp" width="480" height="480" decoding="async"  alt="Proyecto 13" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen23-thumb.webp" data-full="imagen23.webp" width="480" height="480" decoding="async" alt="Proyecto 17" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen25-thumb.webp" data-full="imagen25.webp" width="480" height="480" decoding="async" alt="Proyecto 18" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen26-thumb.webp" data-full="imagen26.webp" width="480" height="480" decoding="async" alt="Proyecto 19" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="imagen27-thumb.webp" data-full="imagen27.webp" width="480" height="480" decoding="async" alt="Proyecto 20" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="IMAGEN.1-thumb.webp" data-full="IMAGEN.1.webp" width="480" height="480" decoding="async" alt="Proyecto 20" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="IMAGEN.2-thumb.webp" data-full="IMAGEN.2.webp" width="480" height="480" decoding="async" alt="Proyecto 20" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="IMAGEN.3-thumb.webp" data-full="IMAGEN.3.webp" width="480" height="480" decoding="async" alt="Proyecto 20" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="IMAGEN.4-thumb.webp" data-full="IMAGEN.4.webp" width="480" height="480" decoding="async" alt="Proyecto 20" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="IMAGEN.5-thumb.webp" data-full="IMAGEN.5.webp" width="480" height="480" decoding="async" alt="Proyecto 20" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (1)-thumb.webp" data-full="Imagen28 (1).webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (2)-thumb.webp" data-full="Imagen28 (2).webp" width="480" height="480" decoding="async"   alt="Proyecto 2"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (3)-thumb.webp" data-full="Imagen28 (3).webp" width="480" height="480" decoding="async"   alt="Proyecto 3"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (4)-thumb.webp" data-full="Imagen28 (4).webp" width="480" height="480" decoding="async"  alt="Proyecto 4"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (5)-thumb.webp" data-full="Imagen28 (5).webp" width="480" height="480" decoding="async"  alt="Proyecto 5"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (6)-thumb.webp" data-full="Imagen28 (6).webp" width="480" height="480" decoding="async"  alt="Proyecto 6"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (7)-thumb.webp" data-full="Imagen28 (7).webp" width="480" height="480" decoding="async" alt="Proyecto 7"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (8)-thumb.webp" data-full="Imagen28 (8).webp" width="480" height="480" decoding="async" alt="Proyecto 8"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (9)-thumb.webp" data-full="Imagen28 (9).webp" width="480" height="480" decoding="async" alt="Proyecto 9"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (10)-thumb.webp" data-full="Imagen28 (10).webp" width="480" height="480" decoding="async" alt="Proyecto 10" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (11)-thumb.webp" data-full="Imagen28 (11).webp" width="480" height="480" decoding="async" alt="Proyecto 11" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (12)-thumb.webp" data-full="Imagen28 (12).webp" width="480" height="480" decoding="async"  alt="Proyecto 12" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (13)-thumb.webp" data-full="Imagen28 (13).webp" width="480" height="480" decoding="async"  alt="Proyecto 13" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (15)-thumb.webp" data-full="Imagen28 (15).webp" width="480" height="480" decoding="async" alt="Proyecto 17" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (16)-thumb.webp" data-full="Imagen28 (16).webp" width="480" height="480" decoding="async" alt="Proyecto 18" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (17)-thumb.webp" data-full="Imagen28 (17).webp" width="480" height="480" decoding="async" alt="Proyecto 19" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (18)-thumb.webp" data-full="Imagen28 (18).webp" width="480" height="480" decoding="async"  alt="Proyecto 12" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (19)-thumb.webp" data-full="Imagen28 (19).webp" width="480" height="480" decoding="async"  alt="Proyecto 13" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (20)-thumb.webp" data-full="Imagen28 (20).webp" width="480" height="480" decoding="async" alt="Proyecto 16" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (21)-thumb.webp" data-full="Imagen28 (21).webp" width="480" height="480" decoding="async" alt="Proyecto 17" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="Imagen28 (22)-thumb.webp" data-full="Imagen28 (22).webp" width="480" height="480" decoding="async" alt="Proyecto 18" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo1-thumb.webp" data-full="nuevo1.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo2-thumb.webp" data-full="nuevo2.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo3-thumb.webp" data-full="nuevo3.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo4-thumb.webp" data-full="nuevo4.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo5-thumb.webp" data-full="nuevo5.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo6-thumb.webp" data-full="nuevo6.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo7-thumb.webp" data-full="nuevo7.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo8-thumb.webp" data-full="nuevo8.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo9-thumb.webp" data-full="nuevo9.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo10-thumb.webp" data-full="nuevo10.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo11-thumb.webp" data-full="nuevo11.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo12-thumb.webp" data-full="nuevo12.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo13-thumb.webp" data-full="nuevo13.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo14-thumb.webp" data-full="nuevo14.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo15-thumb.webp" data-full="nuevo15.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo16-thumb.webp" data-full="nuevo16.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo17-thumb.webp" data-full="nuevo17.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo18-thumb.webp" data-full="nuevo18.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo19-thumb.webp" data-full="nuevo19.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo20-thumb.webp" data-full="nuevo20.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo21-thumb.webp" data-full="nuevo21.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo22-thumb.webp" data-full="nuevo22.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo23-thumb.webp" data-full="nuevo23.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo24-thumb.webp" data-full="nuevo24.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo25-thumb.webp" data-full="nuevo25.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="nuevo26-thumb.webp" data-full="nuevo26.webp" width="480" height="480" decoding="async"   alt="Proyecto 1"  loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (1)-thumb.webp" data-full="n1 (1).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (2)-thumb.webp" data-full="n1 (2).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (3)-thumb.webp" data-full="n1 (3).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (4)-thumb.webp" data-full="n1 (4).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (5)-thumb.webp" data-full="n1 (5).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (6)-thumb.webp" data-full="n1 (6).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (7)-thumb.webp" data-full="n1 (7).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (8)-thumb.webp" data-full="n1 (8).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (9)-thumb.webp" data-full="n1 (9).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (10)-thumb.webp" data-full="n1 (10).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (11)-thumb.webp" data-full="n1 (11).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (12)-thumb.webp" data-full="n1 (12).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (13)-thumb.webp" data-full="n1 (13).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n1 (14)-thumb.webp" data-full="n1 (14).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n2 (1)-thumb.webp" data-full="n2 (1).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n2 (2)-thumb.webp" data-full="n2 (2).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="n2 (3)-thumb.webp" data-full="n2 (3).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (1)-thumb.webp" data-full="211026 (1).webp" width="480" height="480" decoding="async" alt="Proyecto 1" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (2)-thumb.webp" data-full="211026 (2).webp" width="480" height="480" decoding="async" alt="Proyecto 2" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (3)-thumb.webp" data-full="211026 (3).webp" width="480" height="480" decoding="async" alt="Proyecto 3" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (4)-thumb.webp" data-full="211026 (4).webp" width="480" height="480" decoding="async" alt="Proyecto 4" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (5)-thumb.webp" data-full="211026 (5).webp" width="480" height="480" decoding="async" alt="Proyecto 5" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (6)-thumb.webp" data-full="211026 (6).webp" width="480" height="480" decoding="async" alt="Proyecto 6" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (7)-thumb.webp" data-full="211026 (7).webp" width="480" height="480" decoding="async" alt="Proyecto 7" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (8)-thumb.webp" data-full="211026 (8).webp" width="480" height="480" decoding="async" alt="Proyecto 8" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (9)-thumb.webp" data-full="211026 (9).webp" width="480" height="480" decoding="async" alt="Proyecto 9" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (10)-thumb.webp" data-full="211026 (10).webp" width="480" height="480" decoding="async" alt="Proyecto 10" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (11)-thumb.webp" data-full="211026 (11).webp" width="480" height="480" decoding="async" alt="Proyecto 11" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
+    <div class="img-wrap"><img src="211026 (12)-thumb.webp" data-full="211026 (12).webp" width="480" height="480" decoding="async" alt="Proyecto 12" loading="lazy" fetchpriority="low"><div class="img-overlay"><span>Ver imagen</span></div></div>
   </div>
 </section>
 
@@ -638,7 +634,7 @@
       </div>
 
       <div class="wa-box">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/526643549496&bgcolor=ffffff&color=000000&margin=10" alt="QR WhatsApp CAC">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/526643549496&bgcolor=ffffff&color=000000&margin=10" alt="QR WhatsApp CAC" width="200" height="200" loading="lazy" decoding="async">
         <p>Escanea para escribirnos directo por WhatsApp</p>
         <a href="https://wa.me/526643549496" target="_blank" rel="noopener noreferrer" class="wa-btn">💬 Abrir WhatsApp</a>
       </div>
@@ -728,23 +724,47 @@
   const wraps = Array.from(document.querySelectorAll('.galeria-grid .img-wrap'));
   let idx = 0;
 
-  // Construir thumbnails una sola vez
-  wraps.forEach((w, i) => {
-    const src = w.querySelector('img').src;
-    const t = document.createElement('img');
-    t.src = src;
-    t.className = 'm-thumb';
-    t.dataset.i = i;
-    t.addEventListener('click', () => goTo(i));
-    thumbsWrap.appendChild(t);
-  });
+  let thumbnailsBuilt = false;
+  let thumbnailsObserver = null;
   mTotal.textContent = wraps.length;
+
+  function construirMiniaturas() {
+    if (thumbnailsBuilt) return;
+    wraps.forEach((w, i) => {
+      const source = w.querySelector('img');
+      const t = document.createElement('img');
+      t.dataset.src = source.src;
+      t.alt = '';
+      t.loading = 'lazy';
+      t.decoding = 'async';
+      t.className = 'm-thumb';
+      t.dataset.i = i;
+      t.addEventListener('click', () => goTo(i));
+      thumbsWrap.appendChild(t);
+    });
+    thumbnailsBuilt = true;
+
+    if ('IntersectionObserver' in window) {
+      thumbnailsObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const thumb = entry.target;
+          thumb.src = thumb.dataset.src;
+          thumbnailsObserver.unobserve(thumb);
+        });
+      }, { root: thumbsWrap, rootMargin: '0px 160px', threshold: 0.01 });
+      thumbsWrap.querySelectorAll('.m-thumb').forEach(thumb => thumbnailsObserver.observe(thumb));
+    } else {
+      thumbsWrap.querySelectorAll('.m-thumb').forEach(thumb => { thumb.src = thumb.dataset.src; });
+    }
+  }
 
   function abrirModal(i) {
     idx = i;
-    renderModal();
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
+    construirMiniaturas();
+    renderModal();
   }
 
   function cerrarModal() {
@@ -760,15 +780,21 @@
   function renderModal() {
     const img = wraps[idx].querySelector('img');
     modalImg.style.opacity = '0';
-    setTimeout(() => {
-      modalImg.src = img.src;
-      modalImg.alt = img.alt;
-      modalImg.style.opacity = '1';
-    }, 140);
+    modalImg.onload = () => { modalImg.style.opacity = '1'; };
+    modalImg.onerror = () => { modalImg.style.opacity = '1'; };
+    modalImg.src = img.dataset.full || img.currentSrc || img.src;
+    modalImg.alt = img.alt;
+    if (modalImg.complete && modalImg.naturalWidth) modalImg.style.opacity = '1';
     mCurrent.textContent = idx + 1;
     document.querySelectorAll('.m-thumb').forEach((t, i) => t.classList.toggle('activo', i === idx));
     const at = thumbsWrap.querySelector('.m-thumb.activo');
-    if (at) at.scrollIntoView({ behavior:'smooth', inline:'center', block:'nearest' });
+    if (at) {
+      if (!at.hasAttribute('src')) {
+        at.src = at.dataset.src;
+        if (thumbnailsObserver) thumbnailsObserver.unobserve(at);
+      }
+      at.scrollIntoView({ behavior:'smooth', inline:'center', block:'nearest' });
+    }
   }
 
   // Clicks en imágenes
